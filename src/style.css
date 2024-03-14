@@ -1,0 +1,127 @@
+@font-face {
+    font-family: 'MyFont';
+    src: url('./assets/Greek-Freak.ttf') format('truetype');
+    font-style: normal;
+  }
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    
+}
+
+header,nav,body,#content,.main-container,.description, .location, .schedule, .contact-info, .socials-info, .recruitment-info{
+    display: flex;
+}
+
+.main-container ,.schedule ,.description, .location ,.contact-info, .socials-info, .recruitment-info {
+    flex-direction: column;
+    align-items: center;
+}
+
+nav,button,#content {
+    flex: 1;
+}
+
+header {
+    justify-content: center;
+    background-color:#87cefa;
+    min-width: 15vw;
+}
+nav {
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+button {
+    background-color: #2e7fb1;
+    font-family: 'MyFont';
+    font-size: 4rem;
+    color: white;
+    border: none;
+    padding: 15px;
+    
+}
+
+button:hover {
+    background-color:  #54b9f8;
+    cursor: pointer;
+}
+
+#content {
+    background-image: url(assets/tavern.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container {
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 1.5rem;
+    width: 65%;
+    height: 85%;
+    background-image: radial-gradient( rgba(0,0,0,0.4), rgba(0,0,0,1));
+    overflow: scroll;
+    backdrop-filter: blur(5px);
+    border-radius: 7.5vw;
+    justify-content: center;
+}
+
+.title {
+    font-family: 'MyFont';
+    font-size: 3rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    margin-top: 10px;
+    padding: 20px;
+    border: 20px solid lightskyblue;
+    border-style:double;
+    text-align: center;
+    width: 367.1px;
+}
+
+ p {
+    margin-top: 10px;
+}
+
+.description, .location {
+    padding: 20px;
+    text-align: center;
+    max-width: 700px;
+}
+
+span {
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    right: 5px;
+    width: 30px;
+    height: 30px;
+}
+
+#Instagram {
+    background-image: url(./assets/instagram.svg);
+}
+
+#Facebook {
+    background-image: url(./assets/facebook.svg);
+}
+
+#Twitter {
+    background-image: url(./assets/twitter.svg);
+}
+
+a, a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+#email {
+    background-image: url(./assets/email-outline.svg);
+}
+
