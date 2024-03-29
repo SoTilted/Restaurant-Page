@@ -6,3 +6,4 @@ Live page: https://sotilted.github.io/Restaurant-Page/
 
 # TODO
 Maybe make the menu tab better.
+Make it responsive with phone devices.
